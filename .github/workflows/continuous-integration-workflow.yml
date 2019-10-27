@@ -1,0 +1,17 @@
+name: Workflow Example
+on:
+  pull_request:
+    - master
+
+jobs:
+  build:
+    name: Check Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout/@v1
+      - uses: Borales/actions-yarn@v2.0.1
+        with:
+          cmd: install
+      - uses: Borales/actions-yarn@v2.0.1
+        with:
+          cmd: test
