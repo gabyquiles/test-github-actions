@@ -1,7 +1,6 @@
 name: Workflow Example
-on:
-  pull_request:
-    - master
+
+on: [pull_request]
 
 jobs:
   build:
