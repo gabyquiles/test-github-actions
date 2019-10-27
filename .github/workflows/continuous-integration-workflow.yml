@@ -1,6 +1,6 @@
 name: Workflow Example
 
-on: [pull_request]
+on: [push]
 
 jobs:
   build:
@@ -13,4 +13,4 @@ jobs:
           cmd: install
       - uses: Borales/actions-yarn@v2.0.1
         with:
-          cmd: test
+          cmd: test --watchAll=false
