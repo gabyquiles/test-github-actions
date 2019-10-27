@@ -7,5 +7,5 @@ it('renders without crashing', () => {
     ReactDOM.render(<App/>, div);
     ReactDOM.unmountComponentAtNode(div);
 
-    expect(false).toBe(false);
+    expect(true).toBe(false);
 });
